@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+.App {
+    text-align: center;
+    height: 280vh;
+}
+
+.navbar {
+    /* background-color: white;
+  opacity: 10%; */
+    width: 100%;
+    color: black;
+    /* postion elements using flexbox */
+    display: flex;
+    justify-content: left;
+    height: 3rem;
+    padding: 10px;
+    position: fixed;
+    backdrop-filter: blur(3px);
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-item {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #cab9f6;
+}
+
+.logo {
+    height: 80%;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+/* ***************** start of introduction section ***************** */
+.intro-section {
+    height: 100vh;
+    background-image: linear-gradient(132deg, #FAB1B3 10%, #FAF8B1 40%, #B1FAF8 50%);
+    background-size: 300%;
+    background-position: left;
+    display: block;
+    animation: bg-animation 5s infinite alternate;
+}
+
+/*animation that moves the gradient background image*/
+@keyframes bg-animation {
+    0% {
+        background-position: left
+    }
+
+    100% {
+        background-position: right
+    }
+}
+
+.intro-text-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+}
+
+.intro-text {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 600px;
+    text-align: left;
+    box-shadow: 3px 8px 23px 0px rgba(0, 0, 0, 0.49);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.intro-h1 {
+    font-weight: 500;
+}
+
+.intro-h3 {
+    font-weight: 300;
+}
+
+/* ***************** start of work section ***************** */
+.work-section {
+    display: flex;
+    justify-content: center;
+}
+
+.work-container {
+    width: 70%;
+}
+
+.sub-section {
+    text-align: left;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.work-section-title {
+    font-weight: 500;
+}
+
+.list-outer {
+    list-style: decimal;
+}
+.list-inner {
+    list-style: lower-alpha;
+}
+.list-indent {
+    list-style: none;
+}
+.p-bold {
+    font-weight: bold;
+}
+
+/* personas */
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+.persona-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.persona-image {
+    width: 470px;
+    border-radius: 10px;
+    box-shadow: 3px 8px 23px 0px rgba(0, 0, 0, 0.49);
+}
+.storyboard-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px 10px;
+}
+.panel-image {
+    width: 480px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 15px 0px rgba(0, 0, 0, 0.49);
+}
+.microwave-image {
+    border-radius: 10px;
+    box-shadow: 3px 5px 15px 0px rgba(0, 0, 0, 0.49);
+}
+
+/* iterative design */
+.wireframe {
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 15px 0px rgba(0, 0, 0, 0.49);
+}
+.image-full-width {
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.image-full-width:hover {
+    box-shadow: 3px 5px 15px 0px rgba(0, 0, 0, 0.49);
+}
